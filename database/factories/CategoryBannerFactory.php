@@ -18,7 +18,7 @@ class CategoryBannerFactory extends Factory
     public function definition(): array
     {
         return [
-            'category_id' => $this->faker->numberBetween(2, 101),
+            'category_id' => $this->faker->numberBetween(10, 10),
             'banner_id' => $this->faker->numberBetween(1, 100)
         ];
     }

@@ -13,7 +13,7 @@ class Category extends Model
 
     public function banners(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
     {
-        return $this->belongsToMany(Banner::class);
+        return $this->belongsToMany(Banner::class, 'categories_banners', 'banner_id', 'banner_id');
     }
 
 }

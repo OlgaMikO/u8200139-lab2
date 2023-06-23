@@ -13,6 +13,6 @@ class Banner extends Model
 
     public function categories(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
     {
-        return $this->belongsToMany(Category::class);
+        return $this->belongsToMany(Category::class, 'categories_banners');
     }
 }
