@@ -3,6 +3,9 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Banner;
+use App\Models\Category;
+use App\Models\CategoryBanner;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -18,5 +21,11 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+
+//        Category::factory(100)->create();
+//        Banner::factory(100)->create();
+//        CategoryBanner::factory(100)->create();
+
+        CategoryBanner::factory(58)->create();
     }
 }
